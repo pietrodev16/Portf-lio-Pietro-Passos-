@@ -2,7 +2,7 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     multiplier: 1,
-    lerp: 0.05 
+    lerp: 0.08 
 });
 
 window.addEventListener('resize', () => {
