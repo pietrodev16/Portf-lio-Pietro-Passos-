@@ -17,7 +17,7 @@ nav { height: 10vh; display: flex; justify-content: flex-start; align-items: cen
 
 .hero { height: 90vh; display: flex; align-items: center; position: relative; }
 
-h1 { font-size: clamp(3rem, 8vw, 10rem); line-height: 0.9; font-weight: 900; z-index: 2; }
+h1 { font-size: clamp(2.5rem, 8vw, 10rem); line-height: 0.9; font-weight: 900; z-index: 2; }
 
 .outline { color: transparent; -webkit-text-stroke: 1px var(--text); }
 
@@ -66,4 +66,37 @@ h1 { font-size: clamp(3rem, 8vw, 10rem); line-height: 0.9; font-weight: 900; z-i
     color: #fff;
     transform: scale(1.1);
     box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+}
+
+/* Seção de Certificados */
+.certificates { padding: 10vh 0 20vh 0; text-align: center; }
+.certificates h2 { font-size: 2.5rem; margin-bottom: 3rem; font-weight: 700; color: var(--text); }
+.certificates-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; justify-content: center; }
+.certificate-item { width: 100%; display: flex; justify-content: center; }
+.certificate-item img { width: 100%; max-width: 600px; height: auto; border-radius: 8px; border: 1px solid #222; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: block; }
+
+/* Adaptação Mobile (Responsivo) */
+@media (max-width: 768px) {
+    [data-scroll-container] { padding: 0 4vw; }
+    
+    .hero { height: auto; min-height: 80vh; padding: 5vh 0; }
+    
+    .sphere-3d { 
+        width: 180px; 
+        height: 180px; 
+        right: 5%; 
+        top: 60%;
+        opacity: 0.8;
+    }
+    
+    .offer h2 { font-size: 2.5rem; }
+    
+    .btn { 
+        padding: 1rem 1.5rem; 
+        font-size: 0.9rem; 
+        width: 100%; 
+        text-align: center; 
+    }
+    
+    .certificates h2 { font-size: 2rem; }
 }
